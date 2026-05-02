@@ -715,6 +715,12 @@ function subNL(){
   const i=document.getElementById('nlE'),b=document.getElementById('nlB');
   if(i.value&&i.value.includes('@')){b.textContent='✓';b.style.background='#059669';i.value='';setTimeout(()=>{b.textContent='→';b.style.background='';},2500)}
 }
+
 </script>
+<!-- لازم كلمة type="module" عشان الـ import يشتغل -->
+<script type="module" src="./lib/firebase.js"></script>
+
+<!-- وده الملف اللي هنكتب فيه كود إرسال الرسالة -->
+<script type="module" src="./main.js"></script>
 </body>
 </html>
